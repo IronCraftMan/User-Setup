@@ -13,7 +13,19 @@ script AppDelegate
 	property theWindow : missing value
 	
 	on applicationWillFinishLaunching_(aNotification)
-		-- Insert code here to initialize your application before any files are opened 
+        display dialog "User Setup will now setup App Store and Disk Utility debug prefs." buttons {"Canel", "Ok"} default button 2
+        if the button returned of the result is "Ok" then
+        do shell script "defaults write com.apple.appstore ShowDebugMenu -bool true"
+        
+        do shell script "defaults write com.apple.DiskUtility advanced-image-options 1"
+        
+        do shell script "defaults write com.apple.DiskUtility DUDebugMenuEnabled 1"
+        
+        
+        
+        else
+            tell me to quit
+        end if
 	end applicationWillFinishLaunching_
 	
 	on applicationShouldTerminate_(sender)
