@@ -22,16 +22,21 @@ script AppDelegate
 
         display dialog "User Setup will now setup App Store and Disk Utility debug prefs." buttons {"Canel", "Ok"} default button 2
             if the button returned of the result is "Ok" then
-                do shell script "defaults write com.apple.appstore ShowDebugMenu -bool true"
+    #        do shell script "defaults write com.apple.appstore ShowDebugMenu -bool true"
     
-                do shell script "defaults write com.apple.DiskUtility advanced-image-options 1"
+    #       do shell script "defaults write com.apple.DiskUtility advanced-image-options 1"
     
-                do shell script "defaults write com.apple.DiskUtility DUDebugMenuEnabled 1"
+    #       do shell script "defaults write com.apple.DiskUtility DUDebugMenuEnabled 1"
     
-                do shell script "defaults write com.apple.Safari IncludeInternalDebugMenu 1"
+    # do shell script "defaults write com.apple.Safari IncludeInternalDebugMenu 1"
     
     
-    # set finderPrefs to path to resource "finderPrefs" do shell script "mv " & finderPrefs "~/Library/Prefences" do shell script "killall Finder"
+    set finderPrefs to path to resource "com.apple.finder.plist"
+    do shell script "mv " & finderPrefs "~/Desktop/tmp" # (commented for debug) "~/Library/Prefences" do shell script "killall Finder"
+    
+    
+    
+    
     # set default terminal window:
     # set termPrefs to path to resource "finderPrefs" do shell script "mv " &
     # defaults write com.apple.Terminal "Default Window Settings" -string "X"

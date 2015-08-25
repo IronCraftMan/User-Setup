@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED7E72C61B8BEA28004D6996 /* com.apple.finder.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED7E72C51B8BEA28004D6996 /* com.apple.finder.plist */; settings = {ASSET_TAGS = (); }; };
 		EDCCEBEC1B2FC12A00BC4197 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCCEBEB1B2FC12A00BC4197 /* AppleScriptObjC.framework */; };
 		EDCCEBF01B2FC12A00BC4197 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCCEBEF1B2FC12A00BC4197 /* main.m */; };
 		EDCCEBF21B2FC12A00BC4197 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = EDCCEBF11B2FC12A00BC4197 /* AppDelegate.applescript */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		ED7E72C51B8BEA28004D6996 /* com.apple.finder.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = com.apple.finder.plist; sourceTree = "<group>"; };
 		EDCCEBE81B2FC12A00BC4197 /* User Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "User Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCCEBEB1B2FC12A00BC4197 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
 		EDCCEBEF1B2FC12A00BC4197 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		EDCCEBEE1B2FC12A00BC4197 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				ED7E72C51B8BEA28004D6996 /* com.apple.finder.plist */,
 				EDCCEBEF1B2FC12A00BC4197 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -116,7 +119,7 @@
 				};
 			};
 			buildConfigurationList = EDCCEBE31B2FC12A00BC4197 /* Build configuration list for PBXProject "User Setup" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -138,6 +141,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED7E72C61B8BEA28004D6996 /* com.apple.finder.plist in Resources */,
 				EDCCEBF41B2FC12A00BC4197 /* Assets.xcassets in Resources */,
 				EDCCEBF71B2FC12A00BC4197 /* MainMenu.xib in Resources */,
 			);
@@ -255,6 +259,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "User Setup/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Cole.User-Setup";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -267,6 +272,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "User Setup/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Cole.User-Setup";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -291,6 +297,7 @@
 				EDCCEBFD1B2FC12A00BC4197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
