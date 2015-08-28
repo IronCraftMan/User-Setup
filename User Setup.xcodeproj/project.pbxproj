@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED7E72C61B8BEA28004D6996 /* com.apple.finder.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED7E72C51B8BEA28004D6996 /* com.apple.finder.plist */; settings = {ASSET_TAGS = (); }; };
+		ED7E72C61B8BEA28004D6996 /* com.apple.finder.plist in Resources */ = {isa = PBXBuildFile; fileRef = ED7E72C51B8BEA28004D6996 /* com.apple.finder.plist */; };
+		EDAC53301B90FC7A00D0D343 /* AppleScriptKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDAC532F1B90FC7A00D0D343 /* AppleScriptKit.framework */; };
 		EDCCEBEC1B2FC12A00BC4197 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDCCEBEB1B2FC12A00BC4197 /* AppleScriptObjC.framework */; };
 		EDCCEBF01B2FC12A00BC4197 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EDCCEBEF1B2FC12A00BC4197 /* main.m */; };
 		EDCCEBF21B2FC12A00BC4197 /* AppDelegate.applescript in Sources */ = {isa = PBXBuildFile; fileRef = EDCCEBF11B2FC12A00BC4197 /* AppDelegate.applescript */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		ED7E72C51B8BEA28004D6996 /* com.apple.finder.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = com.apple.finder.plist; sourceTree = "<group>"; };
+		EDAC532F1B90FC7A00D0D343 /* AppleScriptKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptKit.framework; path = System/Library/Frameworks/AppleScriptKit.framework; sourceTree = SDKROOT; };
 		EDCCEBE81B2FC12A00BC4197 /* User Setup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "User Setup.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDCCEBEB1B2FC12A00BC4197 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
 		EDCCEBEF1B2FC12A00BC4197 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDAC53301B90FC7A00D0D343 /* AppleScriptKit.framework in Frameworks */,
 				EDCCEBEC1B2FC12A00BC4197 /* AppleScriptObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -58,6 +61,7 @@
 		EDCCEBEA1B2FC12A00BC4197 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EDAC532F1B90FC7A00D0D343 /* AppleScriptKit.framework */,
 				EDCCEBEB1B2FC12A00BC4197 /* AppleScriptObjC.framework */,
 			);
 			name = Frameworks;

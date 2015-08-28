@@ -1,4 +1,17 @@
-
 *.xcuserstate
+
+.DS_Store
+
+build/
+
+*.pbxuser
+
+*.xcworkspace
+
+xcuserdata/
+
+*.xccheckout
+
+*.moved-aside
 
 *.xcuserstate
